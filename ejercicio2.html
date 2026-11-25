@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="mostrarAlerta()">Mostrar alerta</button>
+
+    <p id="parrafo"></p>
+    <button onclick="actualizar()">Actualizar texto</button>
+
+    <script>
+        // Mensaje en la consola al cargar la página
+        console.log('La página se cargó correctamente');
+
+        function mostrarAlerta() {
+            alert('Rayo');
+        }
+
+        function actualizar() {
+            document.getElementById('parrafo').innerHTML = '¡Texto actualizado con Javascript!';
+        }
+    </script>
+</body>
+
+</html>
